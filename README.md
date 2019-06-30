@@ -18,7 +18,7 @@ __Step1 : Import__
 ```
 import React from 'react';
 import {View,Text} from 'react-native';
-import styles from '../../../../../styles';import styles from '_ _ ..file path.._ _';
+import styles from 'file path to utilities.js';
 ```
 
 __Step2 : Load__

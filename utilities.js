@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
   bgDarkest: { backgroundColor: '#3d4852' },
   bgDarker: { backgroundColor: '#606f7b' },
   bgDark: { backgroundColor: '#8795a1' },
-  bgGrey: { backgroundColor: '#b8c2cc' },
+  bgGray: { backgroundColor: '#b8c2cc' },
   bgLight: { backgroundColor: '#dae1e7' },
   bgLighter: { backgroundColor: '#f1f5f8' },
   bgLightest: { backgroundColor: '#f8fafc' },
@@ -171,7 +171,7 @@ const styles = StyleSheet.create({
   colorDarkest: { color: '#3d4852' },
   colorDarker: { color: '#606f7b' },
   colorDark: { color: '#8795a1' },
-  colorGrey: { color: '#b8c2cc' },
+  colorGray: { color: '#b8c2cc' },
   colorLight: { color: '#dae1e7' },
   colorLighter: { color: '#f1f5f8' },
   colorLightest: { color: '#f8fafc' },
@@ -200,8 +200,12 @@ const styles = StyleSheet.create({
   uppercase: { textTransform: 'uppercase' },
   lowercase: { textTransform: 'lowercase' },
   capitalize: { textTransform: 'capitalize' },
-  overlayBlack: { backgroundColor: 'rgba(0, 0, 0, 0.2)' },
-  overlayWhite: { backgroundColor: 'rgba(255, 255, 255, 0.2)' },
+  bgBlack25: { backgroundColor: 'rgba(0, 0, 0, 0.25)' },
+  bgBlack50: { backgroundColor: 'rgba(0, 0, 0, 0.50)' },
+  bgBlack75: { backgroundColor: 'rgba(0, 0, 0, 0.75)' },
+  bgWhite25: { backgroundColor: 'rgba(255, 255, 255, 0.25)' },
+  bgWhite50: { backgroundColor: 'rgba(255, 255, 255, 0.50)' },
+  bgWhite75: { backgroundColor: 'rgba(255, 255, 255, 0.75)' },
   shadow: {
     shadowColor: '#000',
     shadowOffset: {
@@ -210,7 +214,6 @@ const styles = StyleSheet.create({
     },
     shadowOpacity: 0.18,
     shadowRadius: 1.0,
-
     elevation: 1,
   },
   shadow2: {
@@ -221,7 +224,6 @@ const styles = StyleSheet.create({
     },
     shadowOpacity: 0.2,
     shadowRadius: 1.41,
-
     elevation: 2,
   },
   shadow3: {

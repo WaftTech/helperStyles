@@ -2,7 +2,7 @@ import { StyleSheet, Dimensions } from 'react-native';
 
 const styles = StyleSheet.create({
   bgTransparent: { backgroundColor: 'transparent' },
-  bgBlack: { backgroundColor: '#212529' },
+  bgBlack: { backgroundColor: '#000' },
   bgDarkest: { backgroundColor: '#3d4852' },
   bgDarker: { backgroundColor: '#606f7b' },
   bgDark: { backgroundColor: '#8795a1' },
@@ -11,50 +11,40 @@ const styles = StyleSheet.create({
   bgLighter: { backgroundColor: '#f1f5f8' },
   bgLightest: { backgroundColor: '#f8fafc' },
   bgWhite: { backgroundColor: '#fff' },
+
+
+  border0: { borderWidth: 0 },
+  border1_2: { borderWidth: 0.5 },
+  border1: { borderWidth: 1 },
+  border2: { borderWidth: 2 },
+  border4: { borderWidth: 4 },
+  border8: { borderWidth: 8 },
+  borderT1: { borderTopWidth: 1 },
+  borderR1: { borderRightWidth: 1 },
+  borderB1: { borderBottomWidth: 1 },
+  borderL1: { borderLeftWidth: 1 },
   borderTransparent: { borderColor: 'transparent' },
-  borderBlack: { borderColor: '#22292f' },
+  borderBlack: { borderColor: '#000' },
   borderDarkest: { borderColor: '#3d4852' },
   borderDarker: { borderColor: '#606f7b' },
   borderDark: { borderColor: '#8795a1' },
-  border: { borderColor: '#b8c2cc' },
+  borderGray: { borderColor: '#b8c2cc'},
   borderLight: { borderColor: '#dae1e7' },
   borderLighter: { borderColor: '#f1f5f8' },
   borderLightest: { borderColor: '#f8fafc' },
   borderWhite: { borderColor: '#fff' },
+  borderSolid: { borderStyle: 'solid' },
+  borderDashed: { borderStyle: 'dashed' },
+  borderDotted: { borderStyle: 'dotted' },
+
   radius0: { borderRadius: 0 },
+  radius1: { borderRadius: 1},
   radius2: { borderRadius: 2 },
   radius4: { borderRadius: 4 },
   radius6: { borderRadius: 6 },
   radius8: { borderRadius: 8 },
   radius999: { borderRadius: 999 },
-  borderSolid: { borderStyle: 'solid' },
-  borderDashed: { borderStyle: 'dashed' },
-  borderDotted: { borderStyle: 'dotted' },
-  border0: { borderWidth: 0 },
-  border2: { borderWidth: 2 },
-  border4: { borderWidth: 4 },
-  border8: { borderWidth: 8 },
-  border: { borderWidth: 1 },
-  borderT0: { borderTopWidth: 0 },
-  borderR0: { borderRightWidth: 0 },
-  borderB0: { borderBottomWidth: 0 },
-  borderL0: { borderLeftWidth: 0 },
-  borderT2: { borderTopWidth: 2 },
-  borderR2: { borderRightWidth: 2 },
-  borderB2: { borderBottomWidth: 2 },
-  borderL2: { borderLeftWidth: 2 },
-  borderT4: { borderTopWidth: 4 },
-  borderR4: { borderRightWidth: 4 },
-  borderB4: { borderBottomWidth: 4 },
-  borderL4: { borderLeftWidth: 4 },
-  borderT8: { borderTopWidth: 8 },
-  borderR8: { borderRightWidth: 8 },
-  borderB8: { borderBottomWidth: 8 },
-  borderL8: { borderLeftWidth: 8 },
-  borderT: { borderTopWidth: 1 },
-  borderR: { borderRightWidth: 1 },
-  borderB: { borderBottomWidth: 1 },
-  borderL: { borderLeftWidth: 1 },
+  
   dnone: { display: 'none' },
   flex: { display: 'flex' },
   row: { flexDirection: 'row' },
@@ -83,11 +73,13 @@ const styles = StyleSheet.create({
   contentEnd: { alignContent: 'flex-end' },
   contentBetween: { alignContent: 'space-between' },
   contentAround: { alignContent: 'space-around' },
+
   flex1: { flex: 1 },
   flex2: { flex: 2 },
   flex3: { flex: 3 },
   flex4: { flex: 4 },
   flex5: { flex: 5 },
+
   w1: { width: 1 },
   w4: { width: 4 },
   w8: { width: 8 },
@@ -116,6 +108,7 @@ const styles = StyleSheet.create({
   w4_5: { width: '80%' },
   wFull: { width: '100%' },
   wScreen: { width: Dimensions.get('window').width },
+
   h1: { height: 1 },
   h4: { height: 4 },
   h8: { height: 8 },
@@ -144,28 +137,34 @@ const styles = StyleSheet.create({
   h4_5: { height: '80%' },
   hFull: { height: '100%' },
   hScreen: { height: Dimensions.get('window').height },
+
   maxHeightFull: { maxHeight: '100%' },
   maxWidthFull: { maxWidth: '100%' },
   minHeight0: { minHeight: 0 },
   minHeightFull: { minHeight: '100%' },
   minWidth0: { minWidth: 0 },
   minWidthFull: { minWidth: '100%' },
+
   opacity0: { opacity: 0 },
   opacity25: { opacity: 0.25 },
   opacity50: { opacity: 0.5 },
   opacity75: { opacity: 0.75 },
   opacity100: { opacity: 1 },
+
   absolute: { position: 'absolute' },
   relative: { position: 'relative' },
+
   pin: { top: 0, right: 0, bottom: 0, left: 0 },
   top0: { top: 0 },
   right0: { right: 0 },
   bottom0: { bottom: 0 },
   left0: { left: 0 },
+
   textLeft: { textAlign: 'left' },
   textCenter: { textAlign: 'center' },
   textRight: { textAlign: 'right' },
   textJustify: { textAlign: 'justify' },
+
   colorTransparent: { color: 'transparent' },
   colorBlack: { color: '#22292f' },
   colorDarkest: { color: '#3d4852' },
@@ -176,6 +175,7 @@ const styles = StyleSheet.create({
   colorLighter: { color: '#f1f5f8' },
   colorLightest: { color: '#f8fafc' },
   colorWhite: { color: '#fff' },
+
   font12: { fontSize: 12 },
   font14: { fontSize: 14 },
   font16: { fontSize: 16 },
@@ -185,7 +185,7 @@ const styles = StyleSheet.create({
   font30: { fontSize: 30 },
   font36: { fontSize: 36 },
   font48: { fontSize: 48 },
-  italic: { fontStyle: 'italic' },
+
   fontHairline: { fontWeight: '100' },
   fontThin: { fontWeight: '200' },
   fontLight: { fontWeight: '300' },
@@ -194,18 +194,24 @@ const styles = StyleSheet.create({
   fontSemibold: { fontWeight: '600' },
   fontBold: { fontWeight: '700' },
   fontExtrabold: { fontWeight: '800' },
+  italic: { fontStyle: 'italic' },
+  
+
   trackingTight: { letterSpacing: -0.8 },
   trackingNormal: { letterSpacing: 0 },
   trackingWide: { letterSpacing: 0.8 },
+
   uppercase: { textTransform: 'uppercase' },
   lowercase: { textTransform: 'lowercase' },
   capitalize: { textTransform: 'capitalize' },
+
   bgBlack25: { backgroundColor: 'rgba(0, 0, 0, 0.25)' },
   bgBlack50: { backgroundColor: 'rgba(0, 0, 0, 0.50)' },
   bgBlack75: { backgroundColor: 'rgba(0, 0, 0, 0.75)' },
   bgWhite25: { backgroundColor: 'rgba(255, 255, 255, 0.25)' },
   bgWhite50: { backgroundColor: 'rgba(255, 255, 255, 0.50)' },
   bgWhite75: { backgroundColor: 'rgba(255, 255, 255, 0.75)' },
+
   shadow: {
     shadowColor: '#000',
     shadowOffset: {
@@ -236,6 +242,7 @@ const styles = StyleSheet.create({
     shadowRadius: 2.22,
     elevation: 3,
   },
+  
   m0: { marginTop: 0, marginBottom: 0, marginRight: 0, marginLeft: 0 },
   m1: { marginTop: 1, marginBottom: 1, marginRight: 1, marginLeft: 1 },
   m4: { marginTop: 4, marginBottom: 4, marginRight: 4, marginLeft: 4 },
@@ -292,6 +299,7 @@ const styles = StyleSheet.create({
   mr32: { marginRight: 32 },
   mb32: { marginBottom: 32 },
   ml32: { marginLeft: 32 },
+  
   p0: { paddingTop: 0, paddingBottom: 0, paddingRight: 0, paddingLeft: 0 },
   p1: { paddingTop: 1, paddingBottom: 1, paddingRight: 1, paddingLeft: 1 },
   p4: { paddingTop: 4, paddingBottom: 4, paddingRight: 4, paddingLeft: 4 },
@@ -348,6 +356,5 @@ const styles = StyleSheet.create({
   pr32: { paddingRight: 32 },
   pb32: { paddingBottom: 32 },
   pl32: { paddingLeft: 32 },
-});
 
 export default styles;

@@ -19,6 +19,10 @@ const styles = StyleSheet.create({
   border2: { borderWidth: 2 },
   border4: { borderWidth: 4 },
   border8: { borderWidth: 8 },
+  borderT1_2: { borderTopWidth: 0.5 },
+  borderR1_2: { borderRightWidth: 0.5 },
+  borderB1_2: { borderBottomWidth: 0.5 },
+  borderL1_2: { borderLeftWidth: 0.5 },
   borderT1: { borderTopWidth: 1 },
   borderR1: { borderRightWidth: 1 },
   borderB1: { borderBottomWidth: 1 },
@@ -153,6 +157,7 @@ const styles = StyleSheet.create({
 
   absolute: { position: 'absolute' },
   relative: { position: 'relative' },
+  overflowHidden: { overflow:'hidden'},
 
   pin: { top: 0, right: 0, bottom: 0, left: 0 },
   top0: { top: 0 },
@@ -185,6 +190,11 @@ const styles = StyleSheet.create({
   font30: { fontSize: 30 },
   font36: { fontSize: 36 },
   font48: { fontSize: 48 },
+  
+  lineHeight18: { lineHeight:18},
+  lineHeight20: { lineHeight:20},
+  lineHeight22: { lineHeight:22},
+  lineHeight24: { lineHeight:24},
 
   fontHairline: { fontWeight: '100' },
   fontThin: { fontWeight: '200' },

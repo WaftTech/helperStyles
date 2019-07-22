@@ -18,26 +18,31 @@ __Step1 : Import__
 ```
 import React from 'react';
 import {View,Text} from 'react-native';
-import styles from 'file path to utilities.js';
+import utilities from 'file path to utilities.js';
 ```
 
 __Step2 : Load__
 
 ```
- <View style={[styles.py2, styles.border, styles.borderBlack, styles.row]}>
-	<View style={styles.flex1}>
-		<Text style={styles.colorGreyDarkest}>FROM</Text>
-		<Text style={[styles.colorGreyDarker, styles.font24]}>
+ <View style={[s.py2, s.border, s.borderBlack, s.row]}>
+	<View style={s.flex1}>
+		<Text style={s.colorGreyDarkest}>FROM</Text>
+		<Text style={[s.colorGreyDarker, s.font24]}>
 			{moment(start_date).format('hh:mm a')}
 		</Text>
 	</View>
-	<View style={styles.flex1}>
-		<Text style={styles.colorGreyDarkest}>TO</Text>
-		<Text style={[styles.colorGreyDarker, styles.font24, styles.uppercase]}>
+	<View style={s.flex1}>
+		<Text style={s.colorGreyDarkest}>TO</Text>
+		<Text style={[s.colorGreyDarker, s.font24, s.uppercase]}>
 			{moment(end_date).format('hh:mm a')}
 		</Text>
 	</View>
 </View>
 ```
 
-Note: You can use shorter form of ``styles.`` for faster type.
+```
+const s = StyleSheet.create({
+  ...utilities,
+});
+```
+

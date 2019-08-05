@@ -157,6 +157,7 @@ const styles = StyleSheet.create({
 
   absolute: { position: 'absolute' },
   relative: { position: 'relative' },
+  
   overflowHidden: { overflow:'hidden'},
 
   pin: { top: 0, right: 0, bottom: 0, left: 0 },
@@ -164,6 +165,10 @@ const styles = StyleSheet.create({
   right0: { right: 0 },
   bottom0: { bottom: 0 },
   left0: { left: 0 },
+
+  zIndex10: { zIndex: 10 },
+  zIndex20: { zIndex: 20 },
+  zIndex30: { zIndex: 30 },
 
   textLeft: { textAlign: 'left' },
   textCenter: { textAlign: 'center' },

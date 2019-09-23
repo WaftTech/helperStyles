@@ -23,16 +23,20 @@ const styles = StyleSheet.create({
   borderR1_2: { borderRightWidth: 0.5 },
   borderB1_2: { borderBottomWidth: 0.5 },
   borderL1_2: { borderLeftWidth: 0.5 },
-  borderT1: { borderTopWidth: 1 },
-  borderR1: { borderRightWidth: 1 },
-  borderB1: { borderBottomWidth: 1 },
-  borderL1: { borderLeftWidth: 1 },
+  borderT: { borderTopWidth: 1 },
+  borderR: { borderRightWidth: 1 },
+  borderB: { borderBottomWidth: 1 },
+  borderL: { borderLeftWidth: 1 },
+  borderT2: { borderTopWidth: 2 },
+  borderR2: { borderRightWidth: 2 },
+  borderB2: { borderBottomWidth: 2 },
+  borderL2: { borderLeftWidth: 2 },
   borderTransparent: { borderColor: 'transparent' },
   borderBlack: { borderColor: '#000' },
   borderDarkest: { borderColor: '#3d4852' },
   borderDarker: { borderColor: '#606f7b' },
   borderDark: { borderColor: '#8795a1' },
-  borderGray: { borderColor: '#b8c2cc'},
+  borderGray: { borderColor: '#b8c2cc' },
   borderLight: { borderColor: '#dae1e7' },
   borderLighter: { borderColor: '#f1f5f8' },
   borderLightest: { borderColor: '#f8fafc' },
@@ -42,14 +46,14 @@ const styles = StyleSheet.create({
   borderDotted: { borderStyle: 'dotted' },
 
   radius0: { borderRadius: 0 },
-  radius1: { borderRadius: 1},
+  radius1: { borderRadius: 1 },
   radius2: { borderRadius: 2 },
   radius4: { borderRadius: 4 },
   radius6: { borderRadius: 6 },
   radius8: { borderRadius: 8 },
   radius999: { borderRadius: 999 },
-  
-  dnone: { display: 'none' },
+
+  hidden: { display: 'none' },
   flex: { display: 'flex' },
   row: { flexDirection: 'row' },
   rowReverse: { flexDirection: 'row-reverse' },
@@ -83,6 +87,7 @@ const styles = StyleSheet.create({
   flex3: { flex: 3 },
   flex4: { flex: 4 },
   flex5: { flex: 5 },
+  flex6: { flex: 6 },
 
   w1: { width: 1 },
   w4: { width: 4 },
@@ -157,7 +162,7 @@ const styles = StyleSheet.create({
 
   absolute: { position: 'absolute' },
   relative: { position: 'relative' },
-  overflowHidden: { overflow:'hidden'},
+  overflowHidden: { overflow: 'hidden' },
 
   pin: { top: 0, right: 0, bottom: 0, left: 0 },
   top0: { top: 0 },
@@ -190,22 +195,24 @@ const styles = StyleSheet.create({
   font30: { fontSize: 30 },
   font36: { fontSize: 36 },
   font48: { fontSize: 48 },
-  
-  lineHeight18: { lineHeight:18},
-  lineHeight20: { lineHeight:20},
-  lineHeight22: { lineHeight:22},
-  lineHeight24: { lineHeight:24},
 
-  fontHairline: { fontWeight: '100' },
-  fontThin: { fontWeight: '200' },
-  fontLight: { fontWeight: '300' },
-  fontNormal: { fontWeight: '400' },
-  fontMedium: { fontWeight: '500' },
-  fontSemibold: { fontWeight: '600' },
-  fontBold: { fontWeight: '700' },
-  fontExtrabold: { fontWeight: '800' },
+  lineHeight14: { lineHeight: 14 },
+  lineHeight18: { lineHeight: 18 },
+  lineHeight20: { lineHeight: 20 },
+  lineHeight22: { lineHeight: 22 },
+  lineHeight24: { lineHeight: 24 },
+  lineHeight32: { lineHeight: 32 },
+
+  font100: { fontWeight: '100' },
+  font200: { fontWeight: '200' },
+  font300: { fontWeight: '300' },
+  font400: { fontWeight: '400' },
+  font500: { fontWeight: '500' },
+  font600: { fontWeight: '600' },
+  font700: { fontWeight: '700' },
+  font800: { fontWeight: '800' },
   italic: { fontStyle: 'italic' },
-  
+
 
   trackingTight: { letterSpacing: -0.8 },
   trackingNormal: { letterSpacing: 0 },
@@ -252,7 +259,7 @@ const styles = StyleSheet.create({
     shadowRadius: 2.22,
     elevation: 3,
   },
-  
+
   m0: { marginTop: 0, marginBottom: 0, marginRight: 0, marginLeft: 0 },
   m1: { marginTop: 1, marginBottom: 1, marginRight: 1, marginLeft: 1 },
   m4: { marginTop: 4, marginBottom: 4, marginRight: 4, marginLeft: 4 },
@@ -309,7 +316,7 @@ const styles = StyleSheet.create({
   mr32: { marginRight: 32 },
   mb32: { marginBottom: 32 },
   ml32: { marginLeft: 32 },
-  
+
   p0: { paddingTop: 0, paddingBottom: 0, paddingRight: 0, paddingLeft: 0 },
   p1: { paddingTop: 1, paddingBottom: 1, paddingRight: 1, paddingLeft: 1 },
   p4: { paddingTop: 4, paddingBottom: 4, paddingRight: 4, paddingLeft: 4 },
@@ -366,5 +373,6 @@ const styles = StyleSheet.create({
   pr32: { paddingRight: 32 },
   pb32: { paddingBottom: 32 },
   pl32: { paddingLeft: 32 },
+})
 
 export default styles;
